@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Savas Code Scratchpad</title>
+        <link rel="stylesheet" type="text/css" href="src/css/index.css" />
+    </head>
+    <body>
+        <main>
+            <!-- TODO: delete the following div and get going! -->
+            <!-- <h1 class="text-center">Savas Code Scratchpad</h1> -->
+
+            <div class="container">
+                <div class="wrapper">
+                    <div class="form">
+                        <div class="title-wrapper">
+                            <h1 class="form-title">T-Shirt Form</h1>
+                        </div>
+                        <form action="" id="t-shirt-form">
+                            <div class="form-wrapper">
+                                <div class="form-field inline-input">
+                                    <input type="text" name="name" id="name" placeholder="Enter your name...">
+                                    <input type="number" name="quantity" id="quantity" min="1" placeholder="Quantity of shirts...">
+                                </div>
+                                <div class="form-field">
+                                    <h2>Your Shirt Size</h2>
+                                    <div class="size-picker">
+                                        <div class="col">
+                                            <div class="radio">
+                                                <input type="radio" id="small" name="size" value="Small" checked>
+                                                <label for="small">small</label><br>
+                                            </div>
+                                            <div class="radio">
+                                                <input type="radio" id="medium" name="size" value="Medium">
+                                                <label for="medium">medium</label><br>
+                                            </div>
+                                            <div class="radio">
+                                                <input type="radio" id="large" name="size" value="Large">
+                                                <label for="large">Large</label><br>
+                                            </div>
+                                        </div>
+                                        <div class="col">
+                                            <div class="radio">
+                                                <input type="radio" id="xlarge" name="size" value="XL">
+                                                <label for="xlarge">Extra Large</label><br>
+                                            </div>
+                                            <div class="radio">
+                                                <input type="radio" id="xxlarge" name="size" value="XXL">
+                                                <label for="xxlarge">Double XL</label><br>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <select name="shirt-type" id="shirt-type" class="shirt-types">
+                                        <option value="">Pick One</option>
+                                        <option value="short-sleeves">Short Sleeves</option>
+                                        <option value="long-sleeves">Long Sleeves</option>
+                                        <option value="v-neck">V Neck</option>
+                                        <option value="tank-top">Tank Top</option>
+                                    </select>
+                                </div>
+                                <div class="form-field form-btns">
+                                    <button type="reset" class="reset">Clear Field</button>
+                                    <button type="submit" class="submit">Submit</button>
+                                </div>
+                            </div>
+                        </form>
+
+                        <div id="summary" class="summary-field hide">
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </main>
+
+        <script type="module" src="/src/js/index.js"></script>
+    </body>
+</html>
